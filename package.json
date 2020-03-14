@@ -1,0 +1,39 @@
+{
+  "name": "gatsby-source-google-reviews",
+  "description": "Gatsby source plugin to add Google Reviews.",
+  "version": "0.0.1",
+  "author": "Kieran White <kwhite@myself.com>",
+  "dependencies": {
+    "@babel/runtime": "^7.8.7",
+    "cheerio": "^1.0.0-rc.3",
+    "core-js": "^3.6.4",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "string-strip-html": "^4.3.16",
+    "uuid": "^7.0.2"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-source",
+    "gatsby-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kieranwt94/gatsby-source-google-reviews"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "babel-preset-gatsby-package": "^0.2.17",
+    "cross-env": "^7.0.2"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "babel ./src --out-dir ./",
+    "watch": "babel -w src --out-dir .",
+    "prepare": "cross-env NODE_ENV=production npm run build"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.14.0"
+  }
+}
