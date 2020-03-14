@@ -1,12 +1,13 @@
 {
   "name": "gatsby-source-google-reviews",
   "description": "Gatsby source plugin to add Google Reviews.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Kieran White <kwhite@myself.com>",
   "dependencies": {
     "@babel/runtime": "^7.8.7",
     "cheerio": "^1.0.0-rc.3",
     "core-js": "^3.6.4",
+    "follow-redirects": "^1.10.0",
     "moment": "^2.24.0",
     "node-fetch": "^2.6.0",
     "string-strip-html": "^4.3.16",
