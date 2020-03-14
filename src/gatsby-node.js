@@ -20,7 +20,8 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }, { p
 
   axios.get('https://api.scaleserp.com/search', { params })
   .then(response => {
-    const reviews = response.place_reviews_results;
+    const data = JSON.stringify(response.data, 0, 2);
+    const reviews = data.place_reviews_results;
 
     reviews.forEach(review => {
       const nodeContent = JSON.stringify(review);
