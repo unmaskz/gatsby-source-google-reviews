@@ -25,7 +25,7 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }, { p
     reviews.forEach(review => {
       const nodeContent = JSON.stringify(review);
       const nodeMeta = {
-        id: createNodeId(`google-review-${review.id}`),
+        id: createNodeId('google-review'),
         parent: null,
         children: [],
         internal: {
